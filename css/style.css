@@ -296,9 +296,6 @@ body {
 .project-card-placeholder a:hover { text-decoration: underline; }
 
 .project-card {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 28px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -306,24 +303,8 @@ body {
   box-shadow: var(--shadow);
 }
 
-.project-shot {
-  background: linear-gradient(135deg, var(--from), var(--to));
-  min-height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-shot-label {
-  color: rgba(255,255,255,0.92);
-  font-weight: 800;
-  font-size: 1.4rem;
-  letter-spacing: 0.05em;
-  font-family: "SFMono-Regular", Consolas, monospace;
-}
-
 .project-body {
-  padding: 24px 24px 24px 0;
+  padding: 24px;
 }
 
 .project-body h3 {
@@ -717,8 +698,6 @@ body {
   .nav-toggle { display: flex; }
 
   .about-grid { grid-template-columns: 1fr; }
-  .project-card { grid-template-columns: 1fr; }
-  .project-shot { min-height: 100px; }
   .project-body { padding: 20px; }
   .contact-card { padding: 28px; }
 }

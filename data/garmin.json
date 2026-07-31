@@ -49,5 +49,159 @@
       "distance_km": 20.83,
       "duration_min": 147.2
     }
+  ],
+  "runs_last_30_days": [
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-02 12:56:06",
+      "distance_km": 1.38,
+      "duration_min": 9.8,
+      "pace_min_per_km": 7.1
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-03 12:57:59",
+      "distance_km": 3.01,
+      "duration_min": 19.8,
+      "pace_min_per_km": 6.58
+    },
+    {
+      "name": "Klang Running",
+      "type": "running",
+      "date": "2026-07-06 07:00:52",
+      "distance_km": 3.03,
+      "duration_min": 20.6,
+      "pace_min_per_km": 6.8
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-07 12:56:45",
+      "distance_km": 1.4,
+      "duration_min": 9.6,
+      "pace_min_per_km": 6.86
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-08 13:02:07",
+      "distance_km": 1.01,
+      "duration_min": 6.7,
+      "pace_min_per_km": 6.63
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-13 12:56:07",
+      "distance_km": 2.0,
+      "duration_min": 14.8,
+      "pace_min_per_km": 7.4
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-14 12:51:41",
+      "distance_km": 2.8,
+      "duration_min": 20.3,
+      "pace_min_per_km": 7.25
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-16 12:55:04",
+      "distance_km": 1.31,
+      "duration_min": 10.3,
+      "pace_min_per_km": 7.86
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-17 13:15:30",
+      "distance_km": 5.6,
+      "duration_min": 40.1,
+      "pace_min_per_km": 7.16
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-20 13:07:46",
+      "distance_km": null,
+      "duration_min": 0.8,
+      "pace_min_per_km": null
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-20 13:31:00",
+      "distance_km": 1.28,
+      "duration_min": 9.7,
+      "pace_min_per_km": 7.58
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-22 12:48:52",
+      "distance_km": 2.2,
+      "duration_min": 19.8,
+      "pace_min_per_km": 9.0
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-23 12:54:20",
+      "distance_km": 0.78,
+      "duration_min": 4.6,
+      "pace_min_per_km": 5.9
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-23 13:01:54",
+      "distance_km": 2.9,
+      "duration_min": 20.1,
+      "pace_min_per_km": 6.93
+    },
+    {
+      "name": "Dengkil Running",
+      "type": "running",
+      "date": "2026-07-26 03:29:34",
+      "distance_km": 1.19,
+      "duration_min": 9.4,
+      "pace_min_per_km": 7.9
+    },
+    {
+      "name": "Dengkil Running",
+      "type": "running",
+      "date": "2026-07-26 04:04:03",
+      "distance_km": 20.83,
+      "duration_min": 147.2,
+      "pace_min_per_km": 7.07
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-29 12:52:49",
+      "distance_km": 1.22,
+      "duration_min": 9.9,
+      "pace_min_per_km": 8.11
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-29 13:26:14",
+      "distance_km": 1.5,
+      "duration_min": 10.6,
+      "pace_min_per_km": 7.07
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-07-29 13:38:16",
+      "distance_km": 0.5,
+      "duration_min": 3.6,
+      "pace_min_per_km": 7.2
+    }
   ]
 }

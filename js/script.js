@@ -183,8 +183,6 @@ function renderGarminModal(data) {
   }
 
   const activities = data.recent_activities || [];
-  const totalKm = activities.reduce((sum, a) => sum + (a.distance_km || 0), 0);
-  const totalMin = activities.reduce((sum, a) => sum + (a.duration_min || 0), 0);
 
   const activitiesHtml = activities.map(garminActivityHtml).join('')
     || '<li class="garmin-activity-empty">No recent activities synced.</li>';
@@ -195,19 +193,6 @@ function renderGarminModal(data) {
   el.innerHTML = `
     <h4 class="garmin-section-title garmin-section-title-first">Recent activities</h4>
     <ul class="garmin-activities garmin-activities-full">${activitiesHtml}</ul>
-
-    <h4 class="garmin-section-title">Last 30 days data</h4>
-    <div class="garmin-stats-row garmin-stats-row-secondary">
-      ${garminStatHtml('Distance (recent)', totalKm ? Math.round(totalKm * 10) / 10 : null, ' km')}
-      ${garminStatHtml('Time trained (recent)', totalMin ? Math.round(totalMin) : null, ' min')}
-    </div>
-
-    <div class="garmin-stats-row">
-      ${garminStatHtml('Steps', data.daily && data.daily.steps)}
-      ${garminStatHtml('Resting HR', data.daily && data.daily.resting_hr, ' bpm')}
-      ${garminStatHtml('Sleep', data.daily && data.daily.sleep_hours, ' hr')}
-      ${garminStatHtml('VO2 Max', data.vo2max)}
-    </div>
 
     <h4 class="garmin-section-title">Pace</h4>
     <div class="garmin-stats-row garmin-stats-row-secondary">

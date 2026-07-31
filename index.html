@@ -277,13 +277,12 @@
               <li>HTML/ CSS</li>
               <li>Render</li>
             </ul>
-            <div class="garmin-widget" id="garminWidget">
-              <p class="garmin-widget-status">Loading latest stats…</p>
-            </div>
-            <button type="button" class="btn btn-ghost garmin-open-btn" id="garminOpenBtn">See here:</button>
-            <p class="project-note">
-              <a href="https://banding-6n0u.onrender.com/" target="_blank" rel="noopener">Banding</a>.
-            </p>
+            <details class="garmin-details">
+              <summary class="btn btn-ghost garmin-open-btn" id="garminOpenBtn">See here:</summary>
+              <p class="project-note">
+                <a href="https://banding-6n0u.onrender.com/" target="_blank" rel="noopener">Banding</a>.
+              </p>
+            </details>    
           </div>
         </article>
 
@@ -379,3 +378,11 @@
 <script src="js/script.js"></script>
 </body>
 </html>
+<style>
+.garmin-details summary {
+  list-style: none;
+}
+.garmin-details summary::-webkit-details-marker {
+  display: none;
+}
+</style>

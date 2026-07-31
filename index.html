@@ -234,7 +234,7 @@
         <article class="project-card">
           <div class="project-body">
             <h3>Garmin Fitness Dashboard <span class="project-tag">Personal Project</span></h3>
-            <p class="project-role">Role: Solo — Automation &amp; Data Pipeline</p>
+            <!-- <p class="project-role">Role: Solo — Automation &amp; Data Pipeline</p> -->
             <p>
               Garmin's UI makes it hard to compare my pace over the past month, so I built my own
               tracker to actually see the improvement. Since Garmin doesn't offer a public API for
@@ -249,6 +249,34 @@
               <li>Garmin Connect API</li>
               <li>JavaScript</li>
               <li>JSON</li>
+            </ul>
+            <div class="garmin-widget" id="garminWidget">
+              <p class="garmin-widget-status">Loading latest stats…</p>
+            </div>
+            <button type="button" class="btn btn-ghost garmin-open-btn" id="garminOpenBtn">View full dashboard</button>
+            <p class="project-note">
+              Data refreshes daily via a scheduled workflow — see
+              <a href="https://github.com/NurTajalli/portfolio/blob/main/scripts/fetch_garmin.py" target="_blank" rel="noopener">fetch_garmin.py</a>.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-body">
+            <h3>Banding - Web Based Code Compare Tools <span class="project-tag">Personal Project</span></h3>
+            <!-- <p class="project-role">Role: Solo — Automation &amp; Data Pipeline</p> -->
+            <p>
+              Built a free, web-based code diff tool to compare and merge differences between two code files, 
+              similar to WinMerge, without needing to install a desktop app. 
+              Handles long code inputs that most free web-based diff tools typically restrict or paywall. 
+              Deployed and hosted via Render, with source code on GitHub, 
+              giving me a lightweight tool to check code differences anytime without local software or subscription costs.
+            </p>
+            <ul class="tech-list">
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>HTML/ CSS</li>
+              <li>Render</li>
             </ul>
             <div class="garmin-widget" id="garminWidget">
               <p class="garmin-widget-status">Loading latest stats…</p>

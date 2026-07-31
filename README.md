@@ -12,9 +12,10 @@ Personal portfolio site, deployed via GitHub Pages to [nurtajallikp.com](https:/
 
 ## Editing content
 
-Project descriptions for internal systems (CBAS, CRS, Oracle→MariaDB migration) are intentionally
-generalized to avoid exposing proprietary details. Update `index.html` directly to refine wording,
-add real screenshots under `images/`, or add new projects — each project is a `.project-card` block.
+Project descriptions for internal systems (CRS, ETP, AGS, DBS, Oracle→MariaDB migration) are
+intentionally generalized to avoid exposing proprietary details. Update `index.html` directly to
+refine wording, add real screenshots under `images/`, or add new projects — each project is a
+`.project-card` block.
 
 ## Deploying
 

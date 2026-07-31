@@ -731,7 +731,6 @@ main#main {
     top: 0;
     left: 0;
     height: 100vh;
-    overflow-y: auto;
   }
   main#main {
     margin-left: 380px;

@@ -35,8 +35,8 @@
     <h1 class="hero-name">Nur Tajalli Kamalputri</h1>
     <p class="hero-title">Junior IT Developer&nbsp;|&nbsp;PHP &amp; Backend Systems</p>
     <p class="hero-tagline">
-      I build reliable backend systems and untangle legacy data — from PHP applications
-      to Oracle-to-MariaDB migrations that keep production running.
+      I build backend systems and dig through legacy data — mostly PHP and databases,
+      plus a fair bit of untangling old Oracle systems so they don't fall over.
     </p>
     <div class="hero-actions">
       <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -56,14 +56,13 @@
     <h2 class="section-title"><span class="section-num">01.</span> About</h2>
     <div class="about-grid">
       <p class="about-bio">
-        I'm a junior IT developer who likes working close to the data layer — building backend
-        logic in PHP, keeping legacy databases healthy, and making sure systems that other people
-        depend on don't quietly break in production. I'm drawn to problems with real constraints:
-        thin documentation, live systems you can't just take down, and data that has to come out
-        the other side correct, not just fast. Most of my hands-on experience so far has come from
-        maintaining and extending internal backend systems and helping migrate a production database
-        from Oracle to MariaDB — the kind of work that rewards patience and double-checking over
-        cleverness.
+        I'm a junior IT developer who spends most of my time close to the data — writing backend
+        logic in PHP, keeping databases running, and making sure systems other people rely on
+        don't break without warning. I like the kind of problems where the docs are thin, the
+        system's already live, and getting it wrong actually costs something. Most of what I know
+        now comes from maintaining a few internal backend systems and helping migrate a production
+        database from Oracle to MariaDB — not glamorous work, but it taught me to slow down and
+        check things twice.
       </p>
       <div class="about-stack">
         <h3>Currently working with</h3>
@@ -83,8 +82,8 @@
   <section id="projects" class="section container">
     <h2 class="section-title"><span class="section-num">02.</span> Projects</h2>
     <p class="section-note">
-      Some of this work was built for internal enterprise systems — descriptions below focus on the
-      problem and my contribution rather than proprietary code or data.
+      A lot of this is internal work, so I'm keeping the descriptions focused on the problem and
+      what I actually did, not the proprietary details.
     </p>
 
     <div class="projects">
@@ -97,11 +96,10 @@
           <h3>CBAS <span class="project-tag">Internal System</span></h3>
           <p class="project-role">Role: Backend Developer (Junior)</p>
           <p>
-            An internal business administration system used to manage day-to-day case records,
-            approvals, and workflow tracking. I worked on backend logic, bug fixes, and new
-            features against a live production system with an Oracle database, learning to ship
-            changes carefully in an environment where downtime and data errors have real
-            consequences.
+            An internal system for managing case records, approvals, and workflow tracking. I
+            worked on backend logic, bug fixes, and small features on a live production system
+            running on Oracle — learned pretty fast to be careful about what I shipped, since
+            downtime or a bad query actually mattered.
           </p>
           <ul class="tech-list">
             <li>PHP</li>
@@ -121,10 +119,53 @@
           <h3>CRS <span class="project-tag">Internal System</span></h3>
           <p class="project-role">Role: Backend Developer (Junior)</p>
           <p>
-            A records-tracking system used internally to manage and report on structured records
-            across teams. My contribution focused on backend maintenance, query optimization, and
-            adding features requested by internal users — with an emphasis on keeping reports
-            accurate as the underlying data model evolved.
+            An internal system for tracking and reporting on structured records across teams.
+            Mostly backend maintenance and query optimization for me, plus features requested by
+            the people actually using it — keeping the reports accurate even as the data model
+            kept changing underneath.
+          </p>
+          <ul class="tech-list">
+            <li>PHP</li>
+            <li>MySQL / MariaDB</li>
+            <li>SQL</li>
+          </ul>
+          <p class="project-note">Internal enterprise system — code and demo are not publicly available.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-shot" style="--from:#10b981; --to:#34d399;">
+          <span class="project-shot-label">ETP</span>
+        </div>
+        <div class="project-body">
+          <h3>ETP <span class="project-tag">Internal System</span></h3>
+          <p class="project-role">Role: Support</p>
+          <p>
+            I help support ETP (e-Terminal Portal), an internal portal used for terminal
+            operations. That's mostly troubleshooting issues users report, digging into the
+            database to figure out what actually went wrong, and coordinating fixes with the
+            dev team.
+          </p>
+          <ul class="tech-list">
+            <li>PHP</li>
+            <li>MySQL / MariaDB</li>
+            <li>SQL</li>
+          </ul>
+          <p class="project-note">Internal enterprise system — code and demo are not publicly available.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-shot" style="--from:#ec4899; --to:#f472b6;">
+          <span class="project-shot-label">AGS</span>
+        </div>
+        <div class="project-body">
+          <h3>AGS <span class="project-tag">Internal System</span></h3>
+          <p class="project-role">Role: Support</p>
+          <p>
+            Another internal system I help support — day-to-day maintenance, troubleshooting
+            reported issues, and coordinating small fixes with the dev team when something
+            needs a proper backend change.
           </p>
           <ul class="tech-list">
             <li>PHP</li>
@@ -143,10 +184,10 @@
           <h3>Oracle → MariaDB Migration <span class="project-tag">Database</span></h3>
           <p class="project-role">Role: Contributor — Data Migration &amp; Validation</p>
           <p>
-            Migrated a production system's database layer from Oracle to MariaDB. I contributed to
-            schema mapping between the two engines, wrote and ran data validation checks to confirm
-            row counts and values matched after migration, and helped test dependent application
-            queries against the new database to catch syntax and behavior differences early.
+            Helped migrate a production system's database from Oracle to MariaDB. My part was
+            schema mapping between the two engines, writing validation checks to confirm row
+            counts and values matched after the move, and testing the application's queries
+            against the new database to catch syntax differences before they became bugs.
           </p>
           <ul class="tech-list">
             <li>Oracle</li>
@@ -208,8 +249,8 @@
     <h2 class="section-title"><span class="section-num">04.</span> Contact</h2>
     <div class="contact-card">
       <p>
-        I'm open to junior backend / IT developer roles and always happy to talk about PHP,
-        databases, or migration work. The fastest way to reach me is email.
+        Looking for junior backend / IT roles right now, and always happy to chat about PHP,
+        databases, or migration work. Email's the fastest way to reach me.
       </p>
       <a class="btn btn-primary" href="mailto:nurtajallikp@gmail.com">Email nurtajallikp@gmail.com</a>
       <div class="contact-links">

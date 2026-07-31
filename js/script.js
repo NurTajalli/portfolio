@@ -189,10 +189,8 @@ function renderGarminModal(data) {
   const activitiesHtml = activities.map(garminActivityHtml).join('')
     || '<li class="garmin-activity-empty">No recent activities synced.</li>';
 
-  const runs = (data.runs_last_30_days || []).slice().reverse();
-  const runsListHtml = runs.length
-    ? runs.map((r) => `<li><span class="garmin-activity-name">${r.date ? r.date.split(' ')[0] : (r.name || 'Run')}</span><span class="garmin-activity-meta">${r.distance_km != null ? r.distance_km : '—'} km · ${r.duration_min != null ? r.duration_min : '—'} min · ${formatPace(r.pace_min_per_km)}</span></li>`).join('')
-    : '<li class="garmin-activity-empty">No runs logged in the last 30 days.</li>';
+  const runs = data.runs_last_30_days || [];
+  const totalRunKm = runs.reduce((sum, r) => sum + (r.distance_km || 0), 0);
 
   el.innerHTML = `
     <div class="garmin-stats-row">
@@ -209,9 +207,11 @@ function renderGarminModal(data) {
     <ul class="garmin-activities garmin-activities-full">${activitiesHtml}</ul>
 
     <h4 class="garmin-section-title">Running pace — last 30 days</h4>
+    <div class="garmin-stats-row garmin-stats-row-secondary">
+      ${garminStatHtml('Total distance (30 days)', totalRunKm ? Math.round(totalRunKm * 10) / 10 : null, ' km')}
+    </div>
     <p class="garmin-chart-note">Lower pace (min/km) means faster.</p>
     <div class="garmin-pace-chart" id="garminPaceChart"></div>
-    <ul class="garmin-activities garmin-activities-full garmin-runs-list">${runsListHtml}</ul>
 
     <p class="garmin-updated">Last synced ${data.updated_at}</p>
   `;

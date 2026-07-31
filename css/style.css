@@ -541,7 +541,7 @@ body {
 }
 
 .garmin-chart-note {
-  margin: -4px 0 12px;
+  margin: 12px 0;
   font-size: 0.8rem;
   color: var(--text-faint);
 }

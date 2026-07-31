@@ -15,6 +15,33 @@ navLinks.querySelectorAll('a').forEach((link) => {
   });
 });
 
+const navAnchors = Array.from(navLinks.querySelectorAll('a[href^="#"]'));
+const navSections = navAnchors
+  .map((a) => document.getElementById(a.getAttribute('href').slice(1)))
+  .filter(Boolean);
+
+if (navSections.length) {
+  const setActive = (id) => {
+    navAnchors.forEach((a) => {
+      a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
+    });
+  };
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+      if (visible.length) {
+        setActive(visible[0].target.id);
+      }
+    },
+    { rootMargin: '-20% 0px -60% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] }
+  );
+
+  navSections.forEach((section) => sectionObserver.observe(section));
+}
+
 function garminStatHtml(label, value, unit) {
   return `
     <div class="garmin-stat">

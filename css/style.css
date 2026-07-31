@@ -258,11 +258,42 @@ body {
   color: var(--text-dim);
 }
 
+/* ---------- Experience ---------- */
+.experience-block + .experience-block {
+  margin-top: 48px;
+}
+
+.experience-header {
+  margin-bottom: 20px;
+}
+
+.experience-company {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+.experience-meta {
+  margin: 0;
+  color: var(--text-faint);
+  font-size: 0.88rem;
+}
+
 /* ---------- Projects ---------- */
 .projects {
   display: grid;
   gap: 24px;
 }
+
+.project-card-placeholder {
+  display: block;
+  padding: 24px;
+  color: var(--text-dim);
+  box-shadow: none;
+}
+.project-card-placeholder .project-body { padding: 0; }
+.project-card-placeholder p { margin: 0; }
+.project-card-placeholder a { color: var(--accent); text-decoration: none; }
+.project-card-placeholder a:hover { text-decoration: underline; }
 
 .project-card {
   display: grid;

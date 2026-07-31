@@ -12,7 +12,7 @@ None/empty rather than failing the whole run.
 import json
 import os
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 from garminconnect import Garmin
@@ -43,6 +43,9 @@ def main():
     training_status = safe(lambda: client.get_training_status(today)) or {}
     activities = safe(lambda: client.get_activities(0, 5)) or []
 
+    month_ago = (date.today() - timedelta(days=30)).isoformat()
+    activities_month = safe(lambda: client.get_activities_by_date(month_ago, today)) or []
+
     vo2max = None
     if isinstance(max_metrics, list) and max_metrics:
         generic = max_metrics[0].get("generic", {}) or {}
@@ -50,6 +53,24 @@ def main():
 
     sleep_summary = (sleep or {}).get("dailySleepDTO") or {}
     sleep_seconds = sleep_summary.get("sleepTimeSeconds")
+
+    runs = []
+    for a in activities_month:
+        type_key = (a.get("activityType") or {}).get("typeKey") or ""
+        if "running" not in type_key:
+            continue
+        distance_km = round(a["distance"] / 1000, 2) if a.get("distance") else None
+        duration_min = round(a["duration"] / 60, 1) if a.get("duration") else None
+        pace_min_per_km = round(duration_min / distance_km, 2) if duration_min and distance_km else None
+        runs.append({
+            "name": a.get("activityName"),
+            "type": type_key,
+            "date": a.get("startTimeLocal"),
+            "distance_km": distance_km,
+            "duration_min": duration_min,
+            "pace_min_per_km": pace_min_per_km,
+        })
+    runs.sort(key=lambda r: r["date"] or "")
 
     data = {
         "updated_at": today,
@@ -70,6 +91,7 @@ def main():
             }
             for a in activities
         ],
+        "runs_last_30_days": runs,
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)

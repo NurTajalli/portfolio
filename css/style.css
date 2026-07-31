@@ -493,6 +493,7 @@ body {
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
+  z-index: 1;
   background: var(--bg-elevated);
 }
 
@@ -537,6 +538,117 @@ body {
 .garmin-activity-empty {
   color: var(--text-faint);
   font-size: 0.85rem;
+}
+
+.garmin-chart-note {
+  margin: -4px 0 12px;
+  font-size: 0.8rem;
+  color: var(--text-faint);
+}
+
+.garmin-pace-chart {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.garmin-chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.garmin-chart-grid {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.garmin-chart-axis-label,
+.garmin-chart-footer span {
+  font-size: 9px;
+  fill: var(--text-faint);
+  color: var(--text-faint);
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+
+.garmin-chart-area {
+  fill: var(--accent);
+  opacity: 0.1;
+  stroke: none;
+}
+
+.garmin-chart-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.garmin-chart-dot {
+  fill: var(--accent);
+  stroke: var(--bg-elevated);
+  stroke-width: 2;
+}
+
+.garmin-chart-dot-end {
+  fill: var(--accent-2);
+}
+
+.garmin-chart-end-label {
+  font-size: 10px;
+  font-weight: 700;
+  fill: var(--text);
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+
+.garmin-chart-crosshair {
+  stroke: var(--text-faint);
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+}
+
+.garmin-chart-hit {
+  fill: transparent;
+  pointer-events: all;
+  cursor: pointer;
+}
+.garmin-chart-hit:focus { outline: none; }
+
+.garmin-chart-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 16px 0 46px;
+}
+
+.garmin-chart-tooltip {
+  position: absolute;
+  top: 8px;
+  transform: translateX(-50%);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: var(--shadow);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.garmin-chart-tooltip-date {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+}
+
+.garmin-chart-tooltip-pace {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+
+.garmin-chart-tooltip-meta {
+  font-size: 0.75rem;
+  color: var(--text-dim);
 }
 
 /* ---------- Skills ---------- */

@@ -54,6 +54,125 @@ function renderGarminWidget(data) {
   `;
 }
 
+function formatPace(pace) {
+  if (pace == null) return '—';
+  const minutes = Math.floor(pace);
+  const seconds = Math.round((pace - minutes) * 60);
+  return `${minutes}:${String(seconds).padStart(2, '0')} /km`;
+}
+
+function renderPaceChart(container, runs) {
+  const valid = (runs || []).filter((r) => r.pace_min_per_km != null);
+
+  if (valid.length < 2) {
+    container.innerHTML = '<p class="garmin-widget-status">Not enough runs in the last 30 days to show a pace trend.</p>';
+    return;
+  }
+
+  const width = 460;
+  const height = 160;
+  const padL = 46;
+  const padR = 16;
+  const padT = 16;
+  const padB = 12;
+  const innerW = width - padL - padR;
+  const innerH = height - padT - padB;
+
+  const paces = valid.map((r) => r.pace_min_per_km);
+  const minPace = Math.min(...paces);
+  const maxPace = Math.max(...paces);
+  const pad = (maxPace - minPace) * 0.2 || 0.5;
+  const yMin = Math.max(0, minPace - pad);
+  const yMax = maxPace + pad;
+
+  const lastIndex = valid.length - 1;
+  const xStep = innerW / lastIndex;
+  const xAt = (i) => padL + i * xStep;
+  const yAt = (v) => padT + innerH - ((v - yMin) / (yMax - yMin)) * innerH;
+
+  const linePoints = valid.map((r, i) => `${xAt(i)},${yAt(r.pace_min_per_km)}`).join(' ');
+  const areaPoints = `${padL},${padT + innerH} ${linePoints} ${xAt(lastIndex)},${padT + innerH}`;
+
+  const yTicks = [yMax, (yMin + yMax) / 2, yMin];
+  const gridlinesHtml = yTicks.map((v) => `
+    <line x1="${padL}" y1="${yAt(v).toFixed(1)}" x2="${width - padR}" y2="${yAt(v).toFixed(1)}" class="garmin-chart-grid" />
+    <text x="${padL - 8}" y="${(yAt(v) + 4).toFixed(1)}" class="garmin-chart-axis-label" text-anchor="end">${formatPace(v)}</text>
+  `).join('');
+
+  const dotsHtml = valid.map((r, i) => {
+    const isLast = i === lastIndex;
+    return `<circle cx="${xAt(i).toFixed(1)}" cy="${yAt(r.pace_min_per_km).toFixed(1)}" r="${isLast ? 5 : 3}" class="garmin-chart-dot${isLast ? ' garmin-chart-dot-end' : ''}" />`;
+  }).join('');
+
+  const hitAreasHtml = valid.map((r, i) => `
+    <rect x="${(xAt(i) - xStep / 2).toFixed(1)}" y="${padT}" width="${xStep.toFixed(1)}" height="${innerH}"
+      class="garmin-chart-hit" data-index="${i}" tabindex="0" />
+  `).join('');
+
+  const firstDate = valid[0].date ? valid[0].date.split(' ')[0] : '';
+  const lastDate = valid[lastIndex].date ? valid[lastIndex].date.split(' ')[0] : '';
+
+  container.innerHTML = `
+    <svg viewBox="0 0 ${width} ${height}" class="garmin-chart-svg" role="img" aria-label="Running pace trend over the last 30 days">
+      ${gridlinesHtml}
+      <polygon points="${areaPoints}" class="garmin-chart-area"></polygon>
+      <polyline points="${linePoints}" class="garmin-chart-line"></polyline>
+      ${dotsHtml}
+      <text x="${xAt(lastIndex).toFixed(1)}" y="${(yAt(valid[lastIndex].pace_min_per_km) - 12).toFixed(1)}" class="garmin-chart-end-label" text-anchor="end">${formatPace(valid[lastIndex].pace_min_per_km)}</text>
+      <line class="garmin-chart-crosshair" x1="0" y1="${padT}" x2="0" y2="${padT + innerH}" hidden></line>
+      ${hitAreasHtml}
+    </svg>
+    <div class="garmin-chart-footer">
+      <span>${firstDate}</span>
+      <span>${lastDate}</span>
+    </div>
+    <div class="garmin-chart-tooltip" hidden></div>
+  `;
+
+  const svg = container.querySelector('.garmin-chart-svg');
+  const crosshair = container.querySelector('.garmin-chart-crosshair');
+  const tooltip = container.querySelector('.garmin-chart-tooltip');
+
+  const showFor = (i) => {
+    const r = valid[i];
+    crosshair.setAttribute('x1', xAt(i).toFixed(1));
+    crosshair.setAttribute('x2', xAt(i).toFixed(1));
+    crosshair.hidden = false;
+
+    tooltip.hidden = false;
+    tooltip.innerHTML = '';
+    const dateEl = document.createElement('div');
+    dateEl.className = 'garmin-chart-tooltip-date';
+    dateEl.textContent = r.date ? r.date.split(' ')[0] : '';
+    const paceEl = document.createElement('div');
+    paceEl.className = 'garmin-chart-tooltip-pace';
+    paceEl.textContent = formatPace(r.pace_min_per_km);
+    const metaEl = document.createElement('div');
+    metaEl.className = 'garmin-chart-tooltip-meta';
+    metaEl.textContent = `${r.distance_km != null ? r.distance_km : '—'} km · ${r.duration_min != null ? r.duration_min : '—'} min`;
+    tooltip.append(dateEl, paceEl, metaEl);
+
+    const pct = (xAt(i) / width) * 100;
+    tooltip.style.left = `${Math.min(88, Math.max(12, pct))}%`;
+  };
+
+  const hideTooltip = () => {
+    crosshair.hidden = true;
+    tooltip.hidden = true;
+  };
+
+  container.querySelectorAll('.garmin-chart-hit').forEach((hit) => {
+    const i = Number(hit.dataset.index);
+    hit.addEventListener('pointerenter', () => showFor(i));
+    hit.addEventListener('focus', () => showFor(i));
+  });
+
+  svg.addEventListener('pointerleave', hideTooltip);
+  container.addEventListener('focusout', (e) => {
+    if (!container.contains(e.relatedTarget)) hideTooltip();
+  });
+}
+
 function renderGarminModal(data) {
   const el = document.getElementById('garminModalBody');
   if (!el) return;
@@ -70,6 +189,11 @@ function renderGarminModal(data) {
   const activitiesHtml = activities.map(garminActivityHtml).join('')
     || '<li class="garmin-activity-empty">No recent activities synced.</li>';
 
+  const runs = (data.runs_last_30_days || []).slice().reverse();
+  const runsListHtml = runs.length
+    ? runs.map((r) => `<li><span class="garmin-activity-name">${r.date ? r.date.split(' ')[0] : (r.name || 'Run')}</span><span class="garmin-activity-meta">${r.distance_km != null ? r.distance_km : '—'} km · ${r.duration_min != null ? r.duration_min : '—'} min · ${formatPace(r.pace_min_per_km)}</span></li>`).join('')
+    : '<li class="garmin-activity-empty">No runs logged in the last 30 days.</li>';
+
   el.innerHTML = `
     <div class="garmin-stats-row">
       ${garminStatHtml('Steps', data.daily && data.daily.steps)}
@@ -83,8 +207,16 @@ function renderGarminModal(data) {
     </div>
     <h4 class="garmin-section-title">Recent activities</h4>
     <ul class="garmin-activities garmin-activities-full">${activitiesHtml}</ul>
+
+    <h4 class="garmin-section-title">Running pace — last 30 days</h4>
+    <p class="garmin-chart-note">Lower pace (min/km) means faster.</p>
+    <div class="garmin-pace-chart" id="garminPaceChart"></div>
+    <ul class="garmin-activities garmin-activities-full garmin-runs-list">${runsListHtml}</ul>
+
     <p class="garmin-updated">Last synced ${data.updated_at}</p>
   `;
+
+  renderPaceChart(document.getElementById('garminPaceChart'), data.runs_last_30_days || []);
 }
 
 const garminWidgetEl = document.getElementById('garminWidget');

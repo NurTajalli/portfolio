@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nur Tajalli Kamalputri — Junior IT Developer</title>
+<meta name="description" content="Portfolio of Nur Tajalli Kamalputri, Junior IT Developer specializing in PHP, backend systems, and database migration.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="#top" class="nav-brand">NTK</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero container">
+    <p class="hero-eyebrow">Hi, I'm</p>
+    <h1 class="hero-name">Nur Tajalli Kamalputri</h1>
+    <p class="hero-title">Junior IT Developer&nbsp;|&nbsp;PHP &amp; Backend Systems</p>
+    <p class="hero-tagline">
+      I build reliable backend systems and untangle legacy data — from PHP applications
+      to Oracle-to-MariaDB migrations that keep production running.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+    <div class="hero-links">
+      <a href="https://github.com/NurTajalli" target="_blank" rel="noopener">GitHub</a>
+      <span class="dot">·</span>
+      <a href="https://www.linkedin.com/in/nurtajallikp/" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="dot">·</span>
+      <a href="mailto:nurtajallikp@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2 class="section-title"><span class="section-num">01.</span> About</h2>
+    <div class="about-grid">
+      <p class="about-bio">
+        I'm a junior IT developer who likes working close to the data layer — building backend
+        logic in PHP, keeping legacy databases healthy, and making sure systems that other people
+        depend on don't quietly break in production. I'm drawn to problems with real constraints:
+        thin documentation, live systems you can't just take down, and data that has to come out
+        the other side correct, not just fast. Most of my hands-on experience so far has come from
+        maintaining and extending internal backend systems and helping migrate a production database
+        from Oracle to MariaDB — the kind of work that rewards patience and double-checking over
+        cleverness.
+      </p>
+      <div class="about-stack">
+        <h3>Currently working with</h3>
+        <ul class="pill-list">
+          <li>PHP</li>
+          <li>MariaDB / MySQL</li>
+          <li>Oracle</li>
+          <li>SQL</li>
+          <li>Git</li>
+          <li>Linux</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h2 class="section-title"><span class="section-num">02.</span> Projects</h2>
+    <p class="section-note">
+      Some of this work was built for internal enterprise systems — descriptions below focus on the
+      problem and my contribution rather than proprietary code or data.
+    </p>
+
+    <div class="projects">
+
+      <article class="project-card">
+        <div class="project-shot" style="--from:#6366f1; --to:#a855f7;">
+          <span class="project-shot-label">CBAS</span>
+        </div>
+        <div class="project-body">
+          <h3>CBAS <span class="project-tag">Internal System</span></h3>
+          <p class="project-role">Role: Backend Developer (Junior)</p>
+          <p>
+            An internal business administration system used to manage day-to-day case records,
+            approvals, and workflow tracking. I worked on backend logic, bug fixes, and new
+            features against a live production system with an Oracle database, learning to ship
+            changes carefully in an environment where downtime and data errors have real
+            consequences.
+          </p>
+          <ul class="tech-list">
+            <li>PHP</li>
+            <li>Oracle</li>
+            <li>SQL</li>
+            <li>Git</li>
+          </ul>
+          <p class="project-note">Internal enterprise system — code and demo are not publicly available.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-shot" style="--from:#0ea5e9; --to:#22d3ee;">
+          <span class="project-shot-label">CRS</span>
+        </div>
+        <div class="project-body">
+          <h3>CRS <span class="project-tag">Internal System</span></h3>
+          <p class="project-role">Role: Backend Developer (Junior)</p>
+          <p>
+            A records-tracking system used internally to manage and report on structured records
+            across teams. My contribution focused on backend maintenance, query optimization, and
+            adding features requested by internal users — with an emphasis on keeping reports
+            accurate as the underlying data model evolved.
+          </p>
+          <ul class="tech-list">
+            <li>PHP</li>
+            <li>MySQL / MariaDB</li>
+            <li>SQL</li>
+          </ul>
+          <p class="project-note">Internal enterprise system — code and demo are not publicly available.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-shot" style="--from:#f59e0b; --to:#ef4444;">
+          <span class="project-shot-label">DB</span>
+        </div>
+        <div class="project-body">
+          <h3>Oracle → MariaDB Migration <span class="project-tag">Database</span></h3>
+          <p class="project-role">Role: Contributor — Data Migration &amp; Validation</p>
+          <p>
+            Migrated a production system's database layer from Oracle to MariaDB. I contributed to
+            schema mapping between the two engines, wrote and ran data validation checks to confirm
+            row counts and values matched after migration, and helped test dependent application
+            queries against the new database to catch syntax and behavior differences early.
+          </p>
+          <ul class="tech-list">
+            <li>Oracle</li>
+            <li>MariaDB</li>
+            <li>SQL</li>
+            <li>Data Validation</li>
+          </ul>
+          <p class="project-note">Internal migration project — details generalized to protect proprietary data.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <h2 class="section-title"><span class="section-num">03.</span> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <ul class="pill-list">
+          <li>PHP</li>
+          <li>OOP</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <ul class="pill-list">
+          <li>Oracle</li>
+          <li>MariaDB / MySQL</li>
+          <li>SQL</li>
+          <li>Data Migration</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend Basics</h3>
+        <ul class="pill-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools &amp; Platforms</h3>
+        <ul class="pill-list">
+          <li>Git / GitHub</li>
+          <li>Linux</li>
+          <li>Apache</li>
+          <li>phpMyAdmin</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <h2 class="section-title"><span class="section-num">04.</span> Contact</h2>
+    <div class="contact-card">
+      <p>
+        I'm open to junior backend / IT developer roles and always happy to talk about PHP,
+        databases, or migration work. The fastest way to reach me is email.
+      </p>
+      <a class="btn btn-primary" href="mailto:nurtajallikp@gmail.com">Email nurtajallikp@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://github.com/NurTajalli" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/nurtajallikp/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="container">© <span id="year"></span> Nur Tajalli Kamalputri. Built with HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

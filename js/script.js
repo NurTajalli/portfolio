@@ -193,18 +193,19 @@ function renderGarminModal(data) {
   const totalRunKm = runs.reduce((sum, r) => sum + (r.distance_km || 0), 0);
 
   el.innerHTML = `
+    <h4 class="garmin-section-title garmin-section-title-first">Recent activities</h4>
+    <ul class="garmin-activities garmin-activities-full">${activitiesHtml}</ul>
+    <div class="garmin-stats-row garmin-stats-row-secondary">
+      ${garminStatHtml('Distance (recent)', totalKm ? Math.round(totalKm * 10) / 10 : null, ' km')}
+      ${garminStatHtml('Time trained (recent)', totalMin ? Math.round(totalMin) : null, ' min')}
+    </div>
+
     <div class="garmin-stats-row">
       ${garminStatHtml('Steps', data.daily && data.daily.steps)}
       ${garminStatHtml('Resting HR', data.daily && data.daily.resting_hr, ' bpm')}
       ${garminStatHtml('Sleep', data.daily && data.daily.sleep_hours, ' hr')}
       ${garminStatHtml('VO2 Max', data.vo2max)}
     </div>
-    <div class="garmin-stats-row garmin-stats-row-secondary">
-      ${garminStatHtml('Distance (recent)', totalKm ? Math.round(totalKm * 10) / 10 : null, ' km')}
-      ${garminStatHtml('Time trained (recent)', totalMin ? Math.round(totalMin) : null, ' min')}
-    </div>
-    <h4 class="garmin-section-title">Recent activities</h4>
-    <ul class="garmin-activities garmin-activities-full">${activitiesHtml}</ul>
 
     <h4 class="garmin-section-title">Running pace — last 30 days</h4>
     <div class="garmin-stats-row garmin-stats-row-secondary">

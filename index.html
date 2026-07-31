@@ -219,11 +219,12 @@
             <h3>Garmin Fitness Dashboard <span class="project-tag">Personal Project</span></h3>
             <p class="project-role">Role: Solo — Automation &amp; Data Pipeline</p>
             <p>
-              Garmin doesn't offer a public API for individual developers, so this pulls my own
-              Garmin Connect stats through a scheduled GitHub Action running the unofficial
-              <code>garminconnect</code> library. The workflow writes a JSON snapshot back into
-              this repo daily, and this page fetches it client-side to render the widget below —
-              no backend server involved.
+              Garmin's UI makes it hard to compare my pace over the past month, so I built my own
+              tracker to actually see the improvement. Since Garmin doesn't offer a public API for
+              individual developers, I pull my stats using the unofficial <code>garminconnect</code>
+              library through a scheduled GitHub Action that writes a JSON snapshot to this repo
+              daily. This page just fetches it client-side to render the widget below — no backend
+              server needed.
             </p>
             <ul class="tech-list">
               <li>Python</li>

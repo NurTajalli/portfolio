@@ -195,6 +195,8 @@ function renderGarminModal(data) {
   el.innerHTML = `
     <h4 class="garmin-section-title garmin-section-title-first">Recent activities</h4>
     <ul class="garmin-activities garmin-activities-full">${activitiesHtml}</ul>
+
+    <h4 class="garmin-section-title">Last 30 days data</h4>
     <div class="garmin-stats-row garmin-stats-row-secondary">
       ${garminStatHtml('Distance (recent)', totalKm ? Math.round(totalKm * 10) / 10 : null, ' km')}
       ${garminStatHtml('Time trained (recent)', totalMin ? Math.round(totalMin) : null, ' min')}
@@ -207,7 +209,7 @@ function renderGarminModal(data) {
       ${garminStatHtml('VO2 Max', data.vo2max)}
     </div>
 
-    <h4 class="garmin-section-title">Running pace — last 30 days</h4>
+    <h4 class="garmin-section-title">Pace</h4>
     <div class="garmin-stats-row garmin-stats-row-secondary">
       ${garminStatHtml('Total distance (30 days)', totalRunKm ? Math.round(totalRunKm * 10) / 10 : null, ' km')}
     </div>

@@ -106,17 +106,65 @@
 
       <article class="project-card">
         <div class="project-body">
+          <h3>Domestic Billing System (DBS) <span class="project-tag">Customer-Facing System</span></h3>
+          <p class="project-role">Role: Developer</p>
+          <p>
+            A revamp of an older internal system called WDC (Westports Documentation Centre). I
+            worked mainly on the billing and export release side — rebuilding the logic that
+            calculates charges and rates as the old rules got replaced, and validating that the
+            new numbers matched what was expected under the old system before cutover.
+          </p>
+          <ul class="project-highlights">
+            <li>Rebuilt the export release data process: cut processing time for 5,000+ records from ~8 minutes to ~3 minutes</li>
+            <li>Streamlined submission into a single SAP-only workflow, replacing a process that previously ran across 2 separate platforms — reducing manual work for finance</li>
+          </ul>
+          <ul class="tech-list">
+            <li>PHP</li>
+            <li>Oracle</li>
+            <li>MariaDB</li>
+            <li>REST APIs</li>
+          </ul>
+          <p class="project-note">Enterprise system — code and demo are not publicly available.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-body">
+          <h3>Conventional Reporting System (CRS) Phase 1, 2 &amp; 3 <span class="project-tag">Internal System</span></h3>
+          <p class="project-role">Role: Developer</p>
+          <p>
+            An internal system for tracking and reporting on structured records across the
+            conventional team. The data model changed underneath it more than once, so a lot of my
+            work was making sure reports stayed accurate through those changes, plus query
+            optimization as the dataset grew, and features requested directly by the teams using it.
+          </p>
+          <ul class="project-highlights">
+            <li>Kept reporting accurate across 2 data model and submission changes, making sure all data was live-captured with logs stored</li>
+            <li>Optimized queries handling ~50,000 records worth of conventional vessel visit data</li>
+          </ul>
+          <ul class="tech-list">
+            <li>PHP</li>
+            <li>Oracle</li>
+            <li>MariaDB</li>
+            <li>REST APIs</li>
+          </ul>
+          <p class="project-note">Internal enterprise system — code and demo are not publicly available.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-body">
           <h3>Westports ETP (e-Terminal Portal) 3.0 <span class="project-tag">Customer-Facing System</span></h3>
           <p class="project-role">Role: Developer — Team Lead (Chatbot)</p>
           <p>
-            Design and develop new modules for Westports' e-Terminal Portal, including the Vessel
-            Visit module, Chatbot, and SSR Stuffing/Un-stuffing, across both frontend and backend.
-            Lead a team of three building and maintaining ETP Chatbot 1.0 &amp; 2.0 using Botpress
-            Developer to improve user interaction and automation. Build and integrate APIs
-            connecting ETP's mobile app to the web system and to external Westports systems (SCSS,
-            CBAS), ensuring seamless data sync across platforms. Author SRS &amp; URS documentation
-            for audits and provide ongoing support across all developed modules.
+            I support and develop several modules under ETP (e-Terminal Portal), an internal portal
+            for terminal operations. Day to day that's triaging user-reported issues, digging into
+            the database to find root cause, and coordinating fixes with the dev team — usually
+            under time pressure since it's operational, not back-office.
           </p>
+          <ul class="project-highlights">
+            <li>Cleared backlog to zero and maintained zero turnaround time on change requests after taking over ownership</li>
+          </ul>
           <ul class="tech-list">
             <li>PHP</li>
             <li>Oracle</li>
@@ -126,6 +174,29 @@
             <li>JavaScript</li>
           </ul>
           <p class="project-note">Enterprise system — code and demo are not publicly available.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-body">
+          <h3>Automated Gate System (AGS) <span class="project-tag">Internal System</span></h3>
+          <p class="project-role">Role: Developer</p>
+          <p>
+            Another internal system I work on as a developer, building frontend features and
+            fixing bugs as requirements change.
+          </p>
+          <ul class="project-highlights">
+            <li>Built a monitoring dashboard to flag down lanes/servers in real time, along with relevant details for troubleshooting</li>
+            <li>Managed and optimized queries handling 100k+ export container data records</li>
+          </ul>
+          <ul class="tech-list">
+            <li>PHP</li>
+            <li>REST APIs</li>
+            <li>XML Parsing</li>
+            <li>MariaDB</li>
+            <li>Data Visualization</li>
+          </ul>
+          <p class="project-note">Internal enterprise system — code and demo are not publicly available.</p>
         </div>
       </article>
 
@@ -155,12 +226,15 @@
           <h3>Geo-fencing Area Calculation <span class="project-tag">Internal System</span></h3>
           <p class="project-role">Role: Developer</p>
           <p>
-            Developed a system to calculate hauliers within a user-defined geo-fenced area to
-            improve tracking and operational efficiency. Designed and implemented a solution to
-            analyze hauliers and transportation delays caused by gate closures, helping mitigate
-            congestion within the port area. Integrated the Google Maps API to track and verify
-            haulier coordinates, ensuring accurate location-based calculations.
+            Built a geofencing feature to map container locations within Westports' container gate
+            area, using the Google Maps API. This was built to counter major road jams that happen
+            when the gate system goes down — giving a way to track container positions even
+            without the primary system running.
           </p>
+          <ul class="project-highlights">
+            <li>Mapped container boundaries within the gate area using Google Maps API</li>
+            <li>Provided a fallback way to locate containers during gate system outages, reducing reliance on the primary system during peak congestion</li>
+          </ul>
           <ul class="tech-list">
             <li>PHP</li>
             <li>Google Maps API</li>
@@ -168,68 +242,6 @@
             <li>Geolocation</li>
           </ul>
           <p class="project-note">Internal enterprise system — code and demo are not publicly available.</p>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-body">
-          <h3>Automated Gate System (AGS) <span class="project-tag">Internal System</span></h3>
-          <p class="project-role">Role: Developer</p>
-          <p>
-            Developed a dashboard for the AGS system displaying key metrics through data tables
-            and pie charts. Designed and implemented an API to retrieve and store server and gate
-            data, converting XML inputs into structured PHP format.
-          </p>
-          <ul class="tech-list">
-            <li>PHP</li>
-            <li>REST APIs</li>
-            <li>XML Parsing</li>
-            <li>MariaDB</li>
-            <li>Data Visualization</li>
-          </ul>
-          <p class="project-note">Internal enterprise system — code and demo are not publicly available.</p>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-body">
-          <h3>Conventional Reporting System (CRS) Phase 1, 2 &amp; 3 <span class="project-tag">Internal System</span></h3>
-          <p class="project-role">Role: Developer</p>
-          <p>
-            Created detailed submission modules to capture pre- and post-vessel data, along with
-            suggested detail reports for each module to streamline the user experience. Worked
-            with the IoT team to pull and display data from the automatic batch weighing conveyor
-            at the Dry Bulk terminal, giving Conventional teams easier onsite visibility. Built a
-            report mapping every vessel by wharf according to ETA and ETB.
-          </p>
-          <ul class="tech-list">
-            <li>PHP</li>
-            <li>Oracle</li>
-            <li>MariaDB</li>
-            <li>REST APIs</li>
-          </ul>
-          <p class="project-note">Internal enterprise system — code and demo are not publicly available.</p>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-body">
-          <h3>Domestic Billing System (DBS) <span class="project-tag">Customer-Facing System</span></h3>
-          <p class="project-role">Role: Developer</p>
-          <p>
-            Revamped the legacy WDC system with a focus on the export release procedure and
-            billing processes such as VGM. Gathered, interpreted, and translated business
-            requirements to make the system significantly easier and smoother to use than its
-            predecessor. Conducted comprehensive end-to-end testing across each billing flow to
-            ensure accuracy and reliability before deployment.
-          </p>
-          <ul class="tech-list">
-            <li>PHP</li>
-            <li>Oracle</li>
-            <li>MariaDB</li>
-            <li>REST APIs</li>
-          </ul>
-          <p class="project-note">Enterprise system — code and demo are not publicly available.</p>
         </div>
       </article>
 

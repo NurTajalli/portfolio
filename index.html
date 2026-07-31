@@ -211,10 +211,41 @@
         <p class="experience-meta">Self-initiated</p>
       </div>
       <div class="projects">
+        <article class="project-card">
+          <div class="project-shot" style="--from:#65a30d; --to:#16a34a;">
+            <span class="project-shot-label">GAR</span>
+          </div>
+          <div class="project-body">
+            <h3>Garmin Fitness Dashboard <span class="project-tag">Personal Project</span></h3>
+            <p class="project-role">Role: Solo — Automation &amp; Data Pipeline</p>
+            <p>
+              Garmin doesn't offer a public API for individual developers, so this pulls my own
+              Garmin Connect stats through a scheduled GitHub Action running the unofficial
+              <code>garminconnect</code> library. The workflow writes a JSON snapshot back into
+              this repo daily, and this page fetches it client-side to render the widget below —
+              no backend server involved.
+            </p>
+            <ul class="tech-list">
+              <li>Python</li>
+              <li>GitHub Actions</li>
+              <li>Garmin Connect API</li>
+              <li>JavaScript</li>
+              <li>JSON</li>
+            </ul>
+            <div class="garmin-widget" id="garminWidget">
+              <p class="garmin-widget-status">Loading latest stats…</p>
+            </div>
+            <p class="project-note">
+              Data refreshes daily via a scheduled workflow — see
+              <a href="https://github.com/NurTajalli/portfolio/blob/main/scripts/fetch_garmin.py" target="_blank" rel="noopener">fetch_garmin.py</a>.
+            </p>
+          </div>
+        </article>
+
         <article class="project-card project-card-placeholder">
           <div class="project-body">
             <p>
-              Working on a few personal projects to add here — in the meantime, feel free to
+              More personal projects coming soon — in the meantime, feel free to
               check my <a href="https://github.com/NurTajalli" target="_blank" rel="noopener">GitHub</a>.
             </p>
           </div>

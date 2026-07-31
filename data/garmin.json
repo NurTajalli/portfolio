@@ -1,0 +1,11 @@
+{
+  "updated_at": null,
+  "daily": {
+    "steps": null,
+    "resting_hr": null,
+    "sleep_hours": null
+  },
+  "vo2max": null,
+  "training_status": null,
+  "recent_activities": []
+}

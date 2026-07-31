@@ -357,6 +357,15 @@ body {
   margin: 0 0 14px;
 }
 
+.project-body code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.85em;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
 .tech-list {
   list-style: none;
   display: flex;
@@ -379,6 +388,69 @@ body {
   color: var(--text-faint);
   font-style: italic;
   margin: 0 !important;
+}
+
+/* ---------- Garmin widget ---------- */
+.garmin-widget {
+  margin: 4px 0 14px;
+  padding: 16px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.garmin-widget-status {
+  margin: 0;
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+
+.garmin-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.garmin-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.garmin-stat-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+
+.garmin-stat-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+}
+
+.garmin-activities {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.garmin-activities li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.garmin-updated {
+  margin: 12px 0 0;
+  font-size: 0.75rem;
+  color: var(--text-faint);
 }
 
 /* ---------- Skills ---------- */

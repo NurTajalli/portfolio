@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-18",
+  "updated_at": "2026-08-19",
   "daily": {
-    "steps": 6605,
-    "resting_hr": 64,
+    "steps": 56,
+    "resting_hr": null,
     "sleep_hours": null
   },
-  "vo2max": 43.1,
+  "vo2max": null,
   "training_status": {
     "userId": 115612474,
     "mostRecentVO2Max": null,
@@ -14,6 +14,27 @@
     "heatAltitudeAcclimationDTO": null
   },
   "recent_activities": [
+    {
+      "name": "Strength",
+      "type": "strength_training",
+      "date": "2026-08-19 13:11:35",
+      "distance_km": null,
+      "duration_min": 10.6
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-08-19 12:59:32",
+      "distance_km": 1.07,
+      "duration_min": 10.0
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-08-19 12:53:37",
+      "distance_km": 0.33,
+      "duration_min": 3.1
+    },
     {
       "name": "Strength",
       "type": "strength_training",
@@ -27,27 +48,6 @@
       "date": "2026-08-18 06:32:00",
       "distance_km": 4.02,
       "duration_min": 28.7
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-08-17 16:22:55",
-      "distance_km": 0.0,
-      "duration_min": 0.0
-    },
-    {
-      "name": "Strength",
-      "type": "strength_training",
-      "date": "2026-08-17 13:07:57",
-      "distance_km": null,
-      "duration_min": 26.5
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-08-17 12:51:10",
-      "distance_km": 1.6,
-      "duration_min": 14.6
     }
   ],
   "runs_last_30_days": [
@@ -290,6 +290,22 @@
       "distance_km": 4.02,
       "duration_min": 28.7,
       "pace_min_per_km": 7.14
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-08-19 12:53:37",
+      "distance_km": 0.33,
+      "duration_min": 3.1,
+      "pace_min_per_km": 9.39
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-08-19 12:59:32",
+      "distance_km": 1.07,
+      "duration_min": 10.0,
+      "pace_min_per_km": 9.35
     }
   ]
 }

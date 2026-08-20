@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-19",
+  "updated_at": "2026-08-20",
   "daily": {
-    "steps": 56,
-    "resting_hr": null,
+    "steps": 15177,
+    "resting_hr": 65,
     "sleep_hours": null
   },
-  "vo2max": null,
+  "vo2max": 43.1,
   "training_status": {
     "userId": 115612474,
     "mostRecentVO2Max": null,
@@ -15,58 +15,42 @@
   },
   "recent_activities": [
     {
-      "name": "Strength",
-      "type": "strength_training",
-      "date": "2026-08-19 13:11:35",
-      "distance_km": null,
-      "duration_min": 10.6
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-08-20 13:30:45",
+      "distance_km": 1.0,
+      "duration_min": 5.9
     },
     {
       "name": "Treadmill Running",
       "type": "treadmill_running",
-      "date": "2026-08-19 12:59:32",
-      "distance_km": 1.07,
+      "date": "2026-08-20 13:17:35",
+      "distance_km": 1.78,
       "duration_min": 10.0
     },
     {
       "name": "Treadmill Running",
       "type": "treadmill_running",
-      "date": "2026-08-19 12:53:37",
-      "distance_km": 0.33,
-      "duration_min": 3.1
-    },
-    {
-      "name": "Strength",
-      "type": "strength_training",
-      "date": "2026-08-18 13:09:47",
-      "distance_km": null,
-      "duration_min": 25.5
+      "date": "2026-08-20 12:53:03",
+      "distance_km": 2.12,
+      "duration_min": 19.4
     },
     {
       "name": "Klang Running",
       "type": "running",
-      "date": "2026-08-18 06:32:00",
-      "distance_km": 4.02,
-      "duration_min": 28.7
+      "date": "2026-08-20 06:38:17",
+      "distance_km": 4.01,
+      "duration_min": 24.1
+    },
+    {
+      "name": "Strength",
+      "type": "strength_training",
+      "date": "2026-08-19 13:11:35",
+      "distance_km": null,
+      "duration_min": 10.6
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-07-20 13:07:46",
-      "distance_km": null,
-      "duration_min": 0.8,
-      "pace_min_per_km": null
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-07-20 13:31:00",
-      "distance_km": 1.28,
-      "duration_min": 9.7,
-      "pace_min_per_km": 7.58
-    },
     {
       "name": "Treadmill Running",
       "type": "treadmill_running",
@@ -306,6 +290,38 @@
       "distance_km": 1.07,
       "duration_min": 10.0,
       "pace_min_per_km": 9.35
+    },
+    {
+      "name": "Klang Running",
+      "type": "running",
+      "date": "2026-08-20 06:38:17",
+      "distance_km": 4.01,
+      "duration_min": 24.1,
+      "pace_min_per_km": 6.01
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-08-20 12:53:03",
+      "distance_km": 2.12,
+      "duration_min": 19.4,
+      "pace_min_per_km": 9.15
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-08-20 13:17:35",
+      "distance_km": 1.78,
+      "duration_min": 10.0,
+      "pace_min_per_km": 5.62
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-08-20 13:30:45",
+      "distance_km": 1.0,
+      "duration_min": 5.9,
+      "pace_min_per_km": 5.9
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-22",
+  "updated_at": "2026-08-23",
   "daily": {
-    "steps": 2122,
-    "resting_hr": 81,
+    "steps": null,
+    "resting_hr": null,
     "sleep_hours": null
   },
   "vo2max": null,
@@ -51,22 +51,6 @@
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-07-23 12:54:20",
-      "distance_km": 0.78,
-      "duration_min": 4.6,
-      "pace_min_per_km": 5.9
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-07-23 13:01:54",
-      "distance_km": 2.9,
-      "duration_min": 20.1,
-      "pace_min_per_km": 6.93
-    },
     {
       "name": "Dengkil Running",
       "type": "running",

@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-24",
+  "updated_at": "2026-08-25",
   "daily": {
-    "steps": 9359,
-    "resting_hr": 72,
+    "steps": null,
+    "resting_hr": null,
     "sleep_hours": null
   },
-  "vo2max": 42.9,
+  "vo2max": null,
   "training_status": {
     "userId": 115612474,
     "mostRecentVO2Max": null,

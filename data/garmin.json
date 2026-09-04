@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-03",
+  "updated_at": "2026-09-04",
   "daily": {
-    "steps": 6815,
-    "resting_hr": 70,
+    "steps": 8754,
+    "resting_hr": 73,
     "sleep_hours": null
   },
   "vo2max": null,
@@ -51,30 +51,6 @@
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Klang Running",
-      "type": "running",
-      "date": "2026-08-04 06:28:52",
-      "distance_km": 3.48,
-      "duration_min": 25.7,
-      "pace_min_per_km": 7.39
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-08-04 12:52:31",
-      "distance_km": 1.0,
-      "duration_min": 10.0,
-      "pace_min_per_km": 10.0
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-08-04 13:20:21",
-      "distance_km": 1.51,
-      "duration_min": 10.1,
-      "pace_min_per_km": 6.69
-    },
     {
       "name": "Klang Running",
       "type": "running",

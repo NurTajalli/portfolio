@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-05",
+  "updated_at": "2026-09-06",
   "daily": {
-    "steps": 9722,
-    "resting_hr": 67,
-    "sleep_hours": null
+    "steps": 8371,
+    "resting_hr": 60,
+    "sleep_hours": 6.8
   },
   "vo2max": null,
   "training_status": {
@@ -51,22 +51,6 @@
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Klang Running",
-      "type": "running",
-      "date": "2026-08-06 06:36:44",
-      "distance_km": 4.07,
-      "duration_min": 25.8,
-      "pace_min_per_km": 6.34
-    },
-    {
-      "name": "Benchmark Run",
-      "type": "treadmill_running",
-      "date": "2026-08-06 13:03:23",
-      "distance_km": 1.47,
-      "duration_min": 9.7,
-      "pace_min_per_km": 6.6
-    },
     {
       "name": "Klang Running",
       "type": "running",

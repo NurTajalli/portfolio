@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-06",
+  "updated_at": "2026-09-07",
   "daily": {
-    "steps": 8371,
-    "resting_hr": 60,
-    "sleep_hours": 6.8
+    "steps": 5678,
+    "resting_hr": 67,
+    "sleep_hours": null
   },
   "vo2max": null,
   "training_status": {
@@ -51,14 +51,6 @@
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Klang Running",
-      "type": "running",
-      "date": "2026-08-07 06:38:32",
-      "distance_km": 5.01,
-      "duration_min": 34.4,
-      "pace_min_per_km": 6.87
-    },
     {
       "name": "Klang Running",
       "type": "running",

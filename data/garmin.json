@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-29",
+  "updated_at": "2026-09-30",
   "daily": {
-    "steps": 7267,
-    "resting_hr": 77,
+    "steps": 6955,
+    "resting_hr": 79,
     "sleep_hours": null
   },
   "vo2max": null,

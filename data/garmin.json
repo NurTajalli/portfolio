@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-03",
+  "updated_at": "2026-10-04",
   "daily": {
-    "steps": null,
-    "resting_hr": null,
+    "steps": 2575,
+    "resting_hr": 80,
     "sleep_hours": null
   },
   "vo2max": null,
@@ -51,14 +51,6 @@
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-09-03 12:53:57",
-      "distance_km": 2.1,
-      "duration_min": 20.8,
-      "pace_min_per_km": 9.9
-    },
     {
       "name": "Treadmill Running",
       "type": "treadmill_running",

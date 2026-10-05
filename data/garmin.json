@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-04",
+  "updated_at": "2026-10-05",
   "daily": {
-    "steps": 2575,
+    "steps": 7670,
     "resting_hr": 80,
     "sleep_hours": null
   },
@@ -17,6 +17,27 @@
     {
       "name": "Strength",
       "type": "strength_training",
+      "date": "2026-10-05 13:22:02",
+      "distance_km": null,
+      "duration_min": 7.4
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-10-05 12:55:35",
+      "distance_km": 1.55,
+      "duration_min": 14.3
+    },
+    {
+      "name": "Klang Running",
+      "type": "running",
+      "date": "2026-10-05 06:38:12",
+      "distance_km": 0.83,
+      "duration_min": 7.2
+    },
+    {
+      "name": "Strength",
+      "type": "strength_training",
       "date": "2026-09-29 12:53:05",
       "distance_km": null,
       "duration_min": 29.7
@@ -27,27 +48,6 @@
       "date": "2026-09-28 17:21:56",
       "distance_km": 2.61,
       "duration_min": 19.7
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-09-28 16:48:09",
-      "distance_km": 1.73,
-      "duration_min": 13.1
-    },
-    {
-      "name": "Strength",
-      "type": "strength_training",
-      "date": "2026-09-28 13:00:48",
-      "distance_km": null,
-      "duration_min": 28.4
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-09-24 17:27:10",
-      "distance_km": 2.7,
-      "duration_min": 19.9
     }
   ],
   "runs_last_30_days": [
@@ -162,6 +162,22 @@
       "distance_km": 2.61,
       "duration_min": 19.7,
       "pace_min_per_km": 7.55
+    },
+    {
+      "name": "Klang Running",
+      "type": "running",
+      "date": "2026-10-05 06:38:12",
+      "distance_km": 0.83,
+      "duration_min": 7.2,
+      "pace_min_per_km": 8.67
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-10-05 12:55:35",
+      "distance_km": 1.55,
+      "duration_min": 14.3,
+      "pace_min_per_km": 9.23
     }
   ]
 }

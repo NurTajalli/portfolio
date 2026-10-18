@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-18",
   "daily": {
-    "steps": null,
-    "resting_hr": null,
+    "steps": 12364,
+    "resting_hr": 78,
     "sleep_hours": null
   },
-  "vo2max": null,
+  "vo2max": 40.7,
   "training_status": {
     "userId": 115612474,
     "mostRecentVO2Max": null,
@@ -14,6 +14,13 @@
     "heatAltitudeAcclimationDTO": null
   },
   "recent_activities": [
+    {
+      "name": "Shah Alam Running",
+      "type": "running",
+      "date": "2026-10-18 07:36:30",
+      "distance_km": 5.02,
+      "duration_min": 30.4
+    },
     {
       "name": "Treadmill Running",
       "type": "treadmill_running",
@@ -41,24 +48,9 @@
       "date": "2026-10-15 06:47:07",
       "distance_km": 0.27,
       "duration_min": 2.4
-    },
-    {
-      "name": "Strength",
-      "type": "strength_training",
-      "date": "2026-10-14 13:06:40",
-      "distance_km": null,
-      "duration_min": 26.7
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-09-17 12:53:46",
-      "distance_km": 2.6,
-      "duration_min": 20.6,
-      "pace_min_per_km": 7.92
-    },
     {
       "name": "Treadmill Running",
       "type": "treadmill_running",
@@ -282,6 +274,14 @@
       "distance_km": 2.0,
       "duration_min": 12.1,
       "pace_min_per_km": 6.05
+    },
+    {
+      "name": "Shah Alam Running",
+      "type": "running",
+      "date": "2026-10-18 07:36:30",
+      "distance_km": 5.02,
+      "duration_min": 30.4,
+      "pace_min_per_km": 6.06
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-25",
+  "updated_at": "2026-10-26",
   "daily": {
-    "steps": null,
-    "resting_hr": 71,
+    "steps": 8547,
+    "resting_hr": 81,
     "sleep_hours": null
   },
-  "vo2max": null,
+  "vo2max": 40.0,
   "training_status": {
     "userId": 115612474,
     "mostRecentVO2Max": null,
@@ -14,6 +14,13 @@
     "heatAltitudeAcclimationDTO": null
   },
   "recent_activities": [
+    {
+      "name": "Klang Running",
+      "type": "running",
+      "date": "2026-10-26 17:38:30",
+      "distance_km": 5.01,
+      "duration_min": 36.7
+    },
     {
       "name": "Treadmill Running",
       "type": "treadmill_running",
@@ -41,13 +48,6 @@
       "date": "2026-10-22 18:28:22",
       "distance_km": 4.77,
       "duration_min": 33.2
-    },
-    {
-      "name": "Shah Alam Running",
-      "type": "running",
-      "date": "2026-10-22 18:13:50",
-      "distance_km": 1.0,
-      "duration_min": 11.0
     }
   ],
   "runs_last_30_days": [
@@ -274,6 +274,14 @@
       "distance_km": 10.0,
       "duration_min": 69.7,
       "pace_min_per_km": 6.97
+    },
+    {
+      "name": "Klang Running",
+      "type": "running",
+      "date": "2026-10-26 17:38:30",
+      "distance_km": 5.01,
+      "duration_min": 36.7,
+      "pace_min_per_km": 7.33
     }
   ]
 }

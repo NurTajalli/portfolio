@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-03",
+  "updated_at": "2026-11-04",
   "daily": {
-    "steps": 15443,
+    "steps": 5274,
     "resting_hr": 70,
-    "sleep_hours": 7.4
+    "sleep_hours": null
   },
-  "vo2max": 40.4,
+  "vo2max": null,
   "training_status": {
     "userId": 115612474,
     "mostRecentVO2Max": null,
@@ -14,6 +14,13 @@
     "heatAltitudeAcclimationDTO": null
   },
   "recent_activities": [
+    {
+      "name": "Strength",
+      "type": "strength_training",
+      "date": "2026-11-04 13:12:50",
+      "distance_km": null,
+      "duration_min": 22.9
+    },
     {
       "name": "Shah Alam - Interval 30min",
       "type": "running",
@@ -41,13 +48,6 @@
       "date": "2026-11-01 05:05:22",
       "distance_km": 1.01,
       "duration_min": 7.5
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-10-30 13:45:42",
-      "distance_km": 1.09,
-      "duration_min": 11.1
     }
   ],
   "runs_last_30_days": [

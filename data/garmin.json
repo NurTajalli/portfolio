@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-06",
+  "updated_at": "2026-11-07",
   "daily": {
-    "steps": 4983,
-    "resting_hr": 66,
-    "sleep_hours": 5.6
+    "steps": 10524,
+    "resting_hr": 62,
+    "sleep_hours": 7.3
   },
-  "vo2max": null,
+  "vo2max": 40.6,
   "training_status": {
     "userId": 115612474,
     "mostRecentVO2Max": null,
@@ -14,6 +14,13 @@
     "heatAltitudeAcclimationDTO": null
   },
   "recent_activities": [
+    {
+      "name": "Subang Jaya Running",
+      "type": "running",
+      "date": "2026-11-07 06:30:38",
+      "distance_km": 7.62,
+      "duration_min": 53.4
+    },
     {
       "name": "Strength",
       "type": "strength_training",
@@ -41,32 +48,9 @@
       "date": "2026-11-05 18:12:20",
       "distance_km": 4.29,
       "duration_min": 25.8
-    },
-    {
-      "name": "Shah Alam Running",
-      "type": "running",
-      "date": "2026-11-05 17:56:52",
-      "distance_km": 1.29,
-      "duration_min": 10.9
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Klang Running",
-      "type": "running",
-      "date": "2026-10-07 06:46:49",
-      "distance_km": 3.0,
-      "duration_min": 31.2,
-      "pace_min_per_km": 10.4
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-10-07 12:47:39",
-      "distance_km": 2.03,
-      "duration_min": 17.4,
-      "pace_min_per_km": 8.57
-    },
     {
       "name": "Treadmill Running",
       "type": "treadmill_running",
@@ -362,6 +346,14 @@
       "distance_km": 0.41,
       "duration_min": 5.8,
       "pace_min_per_km": 14.15
+    },
+    {
+      "name": "Subang Jaya Running",
+      "type": "running",
+      "date": "2026-11-07 06:30:38",
+      "distance_km": 7.62,
+      "duration_min": 53.4,
+      "pace_min_per_km": 7.01
     }
   ]
 }

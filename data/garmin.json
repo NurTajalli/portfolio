@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-12",
+  "updated_at": "2026-11-13",
   "daily": {
-    "steps": 15366,
-    "resting_hr": 69,
+    "steps": 1035,
+    "resting_hr": 70,
     "sleep_hours": null
   },
-  "vo2max": 41.5,
+  "vo2max": null,
   "training_status": {
     "userId": 115612474,
     "mostRecentVO2Max": null,
@@ -51,14 +51,6 @@
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Klang Running",
-      "type": "running",
-      "date": "2026-10-13 06:33:06",
-      "distance_km": 2.81,
-      "duration_min": 18.5,
-      "pace_min_per_km": 6.58
-    },
     {
       "name": "Klang Running",
       "type": "running",

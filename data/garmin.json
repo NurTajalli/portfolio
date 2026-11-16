@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-15",
+  "updated_at": "2026-11-16",
   "daily": {
-    "steps": 2726,
-    "resting_hr": 69,
+    "steps": 8267,
+    "resting_hr": 71,
     "sleep_hours": null
   },
   "vo2max": null,
@@ -14,6 +14,13 @@
     "heatAltitudeAcclimationDTO": null
   },
   "recent_activities": [
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-11-16 12:55:39",
+      "distance_km": 4.04,
+      "duration_min": 35.9
+    },
     {
       "name": "Subang Jaya Running",
       "type": "running",
@@ -41,13 +48,6 @@
       "date": "2026-11-12 06:43:28",
       "distance_km": 2.59,
       "duration_min": 20.8
-    },
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-11-11 12:57:57",
-      "distance_km": 3.99,
-      "duration_min": 35.1
     }
   ],
   "runs_last_30_days": [
@@ -322,6 +322,14 @@
       "distance_km": 9.71,
       "duration_min": 81.3,
       "pace_min_per_km": 8.37
+    },
+    {
+      "name": "Treadmill Running",
+      "type": "treadmill_running",
+      "date": "2026-11-16 12:55:39",
+      "distance_km": 4.04,
+      "duration_min": 35.9,
+      "pace_min_per_km": 8.89
     }
   ]
 }

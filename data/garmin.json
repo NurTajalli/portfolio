@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-24",
   "daily": {
-    "steps": 11494,
-    "resting_hr": 71,
+    "steps": 9992,
+    "resting_hr": 72,
     "sleep_hours": null
   },
-  "vo2max": null,
+  "vo2max": 41.4,
   "training_status": {
     "userId": 115612474,
     "mostRecentVO2Max": null,
@@ -14,6 +14,20 @@
     "heatAltitudeAcclimationDTO": null
   },
   "recent_activities": [
+    {
+      "name": "Klang - Run Workout",
+      "type": "running",
+      "date": "2026-11-24 17:51:41",
+      "distance_km": 2.0,
+      "duration_min": 15.8
+    },
+    {
+      "name": "Strength",
+      "type": "strength_training",
+      "date": "2026-11-24 13:06:30",
+      "distance_km": null,
+      "duration_min": 29.9
+    },
     {
       "name": "Treadmill Running",
       "type": "treadmill_running",
@@ -32,33 +46,11 @@
       "name": "Miri Running",
       "type": "running",
       "date": "2026-11-21 06:31:40",
-      "distance_km": 4.91,
+      "distance_km": 5.01,
       "duration_min": 27.3
-    },
-    {
-      "name": "Miri Running",
-      "type": "running",
-      "date": "2026-11-21 06:09:49",
-      "distance_km": 1.2,
-      "duration_min": 9.8
-    },
-    {
-      "name": "Miri Running",
-      "type": "running",
-      "date": "2026-11-20 06:20:12",
-      "distance_km": 2.23,
-      "duration_min": 22.1
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Treadmill Running",
-      "type": "treadmill_running",
-      "date": "2026-10-24 09:52:00",
-      "distance_km": 10.0,
-      "duration_min": 69.7,
-      "pace_min_per_km": 6.97
-    },
     {
       "name": "Klang Running",
       "type": "running",
@@ -212,14 +204,6 @@
       "pace_min_per_km": 6.99
     },
     {
-      "name": "Shah Alam - 30s x 10",
-      "type": "running",
-      "date": "2026-11-10 07:33:51",
-      "distance_km": 2.43,
-      "duration_min": 15.9,
-      "pace_min_per_km": 6.54
-    },
-    {
       "name": "Treadmill Running",
       "type": "treadmill_running",
       "date": "2026-11-11 12:57:57",
@@ -319,9 +303,9 @@
       "name": "Miri Running",
       "type": "running",
       "date": "2026-11-21 06:31:40",
-      "distance_km": 4.91,
+      "distance_km": 5.01,
       "duration_min": 27.3,
-      "pace_min_per_km": 5.56
+      "pace_min_per_km": 5.45
     },
     {
       "name": "Miri Running",
@@ -338,6 +322,14 @@
       "distance_km": 5.0,
       "duration_min": 34.7,
       "pace_min_per_km": 6.94
+    },
+    {
+      "name": "Klang - Run Workout",
+      "type": "running",
+      "date": "2026-11-24 17:51:41",
+      "distance_km": 2.0,
+      "duration_min": 15.8,
+      "pace_min_per_km": 7.9
     }
   ]
 }

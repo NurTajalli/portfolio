@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-26",
+  "updated_at": "2026-11-27",
   "daily": {
-    "steps": 13200,
-    "resting_hr": 71,
+    "steps": 12779,
+    "resting_hr": 75,
     "sleep_hours": null
   },
-  "vo2max": 41.5,
+  "vo2max": null,
   "training_status": {
     "userId": 115612474,
     "mostRecentVO2Max": null,
@@ -51,30 +51,6 @@
     }
   ],
   "runs_last_30_days": [
-    {
-      "name": "Shah Alam Running",
-      "type": "running",
-      "date": "2026-10-27 17:24:45",
-      "distance_km": 0.0,
-      "duration_min": 0.0,
-      "pace_min_per_km": null
-    },
-    {
-      "name": "Shah Alam Running",
-      "type": "running",
-      "date": "2026-10-27 17:25:11",
-      "distance_km": 1.61,
-      "duration_min": 10.0,
-      "pace_min_per_km": 6.21
-    },
-    {
-      "name": "Shah Alam - Interval 30min",
-      "type": "running",
-      "date": "2026-10-27 17:39:30",
-      "distance_km": 4.39,
-      "duration_min": 38.8,
-      "pace_min_per_km": 8.84
-    },
     {
       "name": "Shah Alam Running",
       "type": "running",
